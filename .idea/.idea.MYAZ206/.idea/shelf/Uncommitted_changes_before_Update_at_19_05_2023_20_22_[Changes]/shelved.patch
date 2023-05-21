@@ -1,0 +1,40 @@
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># MYAZ206 Veri Yapıları ve Algoritmalar Dersi\r\nVeri yapıları ve algoritmalar, bilgisayar bilimleri açısından temel teşkil eden önemli bir alan olarak görülmelidir. Veri yapıları ve algoritmalar, problemlere mantıksal çözümler geliştirmenin ve aynı zamanda görevleri en iyi şekilde yerine getiren verimli programlar oluşturmanın temel yapı taşlarını oluşturdukları için bilgisayar biliminin önemli yönlerini oluştururlar.\r\n\r\nEğitime ait Youtube içerikleri için \r\n\r\n## [Youtube Oynama Listesi](https://www.youtube.com/watch?v=8HgTKh-ik30&list=PLK37qYAhi0EfUz9ztgca3sJYn68FIxWxk)\r\n\r\n# Veri Yapıları ve Algoritmalara Giriş\r\n- Veri Yapılarına Giriş\r\n- Veri Tipleri\r\n- Referans Tipler (class) ve Değer Tipler (struct)\r\n- ref, out, params ve in parametre düzenleyicileri \r\n\r\n# Diziler\r\n- Diziler (Array)\r\n- Dizi Tasarımı ve Uygulamaları\r\n- Dinamik Diziler \r\n- Generic Diziler\r\n- Test Çalışmaları\r\n\r\n# Koleksiyonlar\r\n- Generic Olmayan Koleksiyonlar\r\n  - ArrayList\r\n  - Hashtable\r\n- Generic Koleksiyonlar\r\n  - List<T>\r\n  - Dictionary<TKey, TValue>\r\n  - SortedList\r\n  - HashSet\r\n- Test Çalışmaları\r\n
+===================================================================
+diff --git a/README.md b/README.md
+--- a/README.md	
++++ b/README.md	
+@@ -1,30 +1,1 @@
+-# MYAZ206 Veri Yapıları ve Algoritmalar Dersi
+-Veri yapıları ve algoritmalar, bilgisayar bilimleri açısından temel teşkil eden önemli bir alan olarak görülmelidir. Veri yapıları ve algoritmalar, problemlere mantıksal çözümler geliştirmenin ve aynı zamanda görevleri en iyi şekilde yerine getiren verimli programlar oluşturmanın temel yapı taşlarını oluşturdukları için bilgisayar biliminin önemli yönlerini oluştururlar.
+-
+-Eğitime ait Youtube içerikleri için 
+-
+-## [Youtube Oynama Listesi](https://www.youtube.com/watch?v=8HgTKh-ik30&list=PLK37qYAhi0EfUz9ztgca3sJYn68FIxWxk)
+-
+-# Veri Yapıları ve Algoritmalara Giriş
+-- Veri Yapılarına Giriş
+-- Veri Tipleri
+-- Referans Tipler (class) ve Değer Tipler (struct)
+-- ref, out, params ve in parametre düzenleyicileri 
+-
+-# Diziler
+-- Diziler (Array)
+-- Dizi Tasarımı ve Uygulamaları
+-- Dinamik Diziler 
+-- Generic Diziler
+-- Test Çalışmaları
+-
+-# Koleksiyonlar
+-- Generic Olmayan Koleksiyonlar
+-  - ArrayList
+-  - Hashtable
+-- Generic Koleksiyonlar
+-  - List<T>
+-  - Dictionary<TKey, TValue>
+-  - SortedList
+-  - HashSet
+-- Test Çalışmaları
++# MYAZ206 Veri Yapıları ve Algoritmalar Pratik
