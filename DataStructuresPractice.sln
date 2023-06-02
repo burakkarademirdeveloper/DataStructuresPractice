@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingApp", "SortingApp\So
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingAlgorithms", "SortingAlgorithms\SortingAlgorithms.csproj", "{2EC75E9D-D721-411D-AD63-DC7905A68CB0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactorialWithRecusive", "FactorialWithRecusive\FactorialWithRecusive.csproj", "{D1206917-9491-4604-8F9A-1B9E452D1F08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{2EC75E9D-D721-411D-AD63-DC7905A68CB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EC75E9D-D721-411D-AD63-DC7905A68CB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EC75E9D-D721-411D-AD63-DC7905A68CB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1206917-9491-4604-8F9A-1B9E452D1F08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1206917-9491-4604-8F9A-1B9E452D1F08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1206917-9491-4604-8F9A-1B9E452D1F08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1206917-9491-4604-8F9A-1B9E452D1F08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -135,6 +141,7 @@ Global
 		{BB0F66C1-58CA-4085-B8AF-D057C323CED9} = {046BB12E-8C3B-40D6-AD85-7930933468A7}
 		{14FBDBE1-6C14-45D1-8A93-9FD787FFBE55} = {8DE0EC7E-5133-4AC9-866F-EE87102A34B6}
 		{2EC75E9D-D721-411D-AD63-DC7905A68CB0} = {F5C919E3-B901-4C92-9800-BB6431F320DF}
+		{D1206917-9491-4604-8F9A-1B9E452D1F08} = {8DE0EC7E-5133-4AC9-866F-EE87102A34B6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {228B10E9-C319-4DC0-A77D-321B76C3B424}
