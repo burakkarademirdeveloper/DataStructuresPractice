@@ -1,18 +1,34 @@
 ﻿
 
+using System.Data.SQLite;
 using SortingAlgorithms;
 
-Console.WriteLine("Sıralamak istediğiniz diziyi kendiniz belirlemelisiniz.");
-Console.WriteLine("Diziniz kaç elemanlı olsun?");
-int arrayCount = Convert.ToInt32(Console.ReadLine());
-int[] array = new int[arrayCount];
-Console.WriteLine("Dizinizin elemanlarını giriniz.");
-for (int i = 0; i < arrayCount; i++)
+string connectionString = "Data Source=C:/SQLite/Employee.db;Version=3;";
+List<double> values = new List<double>();
+
+using (SQLiteConnection connection = new SQLiteConnection(connectionString))
 {
-    Console.WriteLine((i+1)+". elemanı giriniz.");
-    array[i] = Convert.ToInt32(Console.ReadLine());
+    connection.Open();
+
+    string sql = "SELECT * FROM Employees";
+
+    using (SQLiteCommand command = new SQLiteCommand(sql, connection))
+    {
+        using (SQLiteDataReader reader = command.ExecuteReader())
+        {
+            while (reader.Read())
+            {
+                double value;
+                if (Double.TryParse(reader["Salary"].ToString(), out value))
+                {
+                    values.Add(value);
+                }
+            }
+        }
+    }
 }
-Console.WriteLine("Hangi algoritma ile sıralamak istiyorsunuz?");
+
+Console.WriteLine("Hangi algoritma ile sıralamak istersiniz?");
 Console.WriteLine("1- Bubble Sort");
 Console.WriteLine("2- Insertion Sort");
 Console.WriteLine("3- Merge Sort");
@@ -22,47 +38,52 @@ int algorithm = Convert.ToInt32(Console.ReadLine());
 switch (algorithm)
 {
     case 1:
-        BubbleSort.Sort(array);
+        double[] sortedValues = values.ToArray();
+        BubbleSort.Sort(sortedValues);
         Console.WriteLine("Bubble sort ile sıralanmış diziniz:");
-        for (int i = 0; i < arrayCount; i++)
+        foreach (double value in sortedValues)
         {
-            Console.Write(array[i] + " ");
+            Console.WriteLine(value);
         }
         Console.WriteLine();
         break;
     case 2:
-        InsertionSort.Sort(array);
+        double[] sortedValues1 = values.ToArray();
+        InsertionSort.Sort(sortedValues1);
         Console.WriteLine("Insertion sort ile sıralanmış diziniz:");
-        for (int i = 0; i < arrayCount; i++)
+        foreach (double value in sortedValues1)
         {
-            Console.Write(array[i] + " ");
+            Console.WriteLine(value);
         }
         Console.WriteLine();
         break;
     case 3:
-        MergeSort.Sort(array);
+        double[] sortedValues2 = values.ToArray();
+        MergeSort.Sort(sortedValues2);
         Console.WriteLine("Merge sort ile sıralanmış diziniz:");
-        for (int i = 0; i < arrayCount; i++)
+        foreach (double value in sortedValues2)
         {
-            Console.Write(array[i] + " ");
+            Console.WriteLine(value);
         }
         Console.WriteLine();
         break;
     case 4:
-        Quicksort.Sort(array);
+        double[] sortedValues3 = values.ToArray();
+        Quicksort.Sort(sortedValues3);
         Console.WriteLine("Quick sort ile sıralanmış diziniz:");
-        for (int i = 0; i < arrayCount; i++)
+        foreach (double value in sortedValues3)
         {
-            Console.Write(array[i] + " ");
+            Console.WriteLine(value);
         }
         Console.WriteLine();
         break;
     case 5:
-        SelectionSort.Sort(array);
+        double[] sortedValues4 = values.ToArray();
+        SelectionSort.Sort(sortedValues4);
         Console.WriteLine("Selection sort ile sıralanmış diziniz:");
-        for (int i = 0; i < arrayCount; i++)
+        foreach (double value in sortedValues4)
         {
-            Console.Write(array[i] + " ");
+            Console.WriteLine(value);
         }
         Console.WriteLine();
         break;
@@ -70,5 +91,6 @@ switch (algorithm)
         Console.WriteLine("Hatalı seçim yaptınız.");
         break;
 }
+
 
 

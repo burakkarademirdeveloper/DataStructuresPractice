@@ -51,6 +51,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingAlgorithms", "Sortin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactorialWithRecusive", "FactorialWithRecusive\FactorialWithRecusive.csproj", "{D1206917-9491-4604-8F9A-1B9E452D1F08}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Databases", "Databases", "{185FB5FD-7242-4C24-92BA-CF5F4603EC18}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\SQLite\Employee.db = ..\..\..\..\..\SQLite\Employee.db
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
