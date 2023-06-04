@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-Console.WriteLine("Hello, World!");
+﻿
 
 var list = new List<int>() { 25, 15, 78,7,18,90,86 };
 var bst = new BSTree<int>();
