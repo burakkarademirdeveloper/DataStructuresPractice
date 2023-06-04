@@ -24,8 +24,14 @@ Console.WriteLine(bst.Root.Right.Right.Left.Item);
            (86) 
  */
 
-BSTree<int>.InOrder(bst.Root);
+BSTree<int>.InOrder(bst.Root); // 7 15 18 25 78 86 90
 Console.WriteLine("-----InOrder Recursive"); 
-BSTree<int>.InOrderTraversal(bst.Root)
+BSTree<int>.InOrderTraversal(bst.Root) // 7 15 18 25 78 86 90
     .ForEach(item => Console.Write(item + "  "));
 Console.WriteLine("-----InOrder Iterative");
+BSTree<int>.PreOrder(bst.Root); // 25 15 7 18 78 90 86
+Console.WriteLine("-----PreOrder Recursive");
+BSTree<int>.PreOrderIterative(bst.Root);// 25 15 7 18 78 90 86
+Console.WriteLine("-----PreOrder Iterative");
+BSTree<int>.Leaf(bst.Root); // 7 18 86
+Console.WriteLine("-----Leaf");

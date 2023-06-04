@@ -85,4 +85,50 @@
         }
         return res;
     }
+
+    public static void PreOrder(Node<T> root)
+    {
+        //Düğüm - Left- Right
+        if (root != null)
+        {
+            root.Display();
+            PreOrder(root.Left);
+            PreOrder(root.Right);
+        }
+    }
+    public static void PreOrderIterative(Node<T> root)
+    {
+        if (root == null)
+        {
+            return;
+        }
+        var s = new Stack<Node<T>>();
+        s.Push(root);
+        while (s.Count > 0)
+        {
+            var current = s.Pop();
+            current.Display();
+            if (current.Right != null)
+            {
+                s.Push(current.Right);
+            }
+            if (current.Left != null)
+            {
+                s.Push(current.Left);
+            }
+        }
+    }
+
+    public static void Leaf(Node<T> root)
+    {
+        if (root != null)
+        {
+            if (root.Left == null && root.Right == null)
+            {
+                root.Display();
+            }
+            Leaf(root.Left);
+            Leaf(root.Right);
+        }
+    }
 }
