@@ -41,6 +41,7 @@ namespace DataStructures.Arrray.Generic
         }
         public void SetValue(T value, int index)
         {
+            
             if (!(index >= 0 && index < InnerArray.Length))
                 throw new ArgumentOutOfRangeException();
             if (value == null)
