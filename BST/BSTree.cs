@@ -47,4 +47,13 @@
             }
         }
     }
+    public static void InOrder(Node<T> root)
+    {
+        if (root != null)
+        {
+            InOrder(root.Left);
+            root.Display();
+            InOrder(root.Right);
+        }
+    }
 }

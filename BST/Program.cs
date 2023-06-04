@@ -23,3 +23,5 @@ Console.WriteLine(bst.Root.Right.Right.Left.Item);
              /
            (86) 
  */
+ //------InOrder Recursive
+ BSTree<int>.InOrder(bst.Root);
