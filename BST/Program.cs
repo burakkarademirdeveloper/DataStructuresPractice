@@ -23,5 +23,9 @@ Console.WriteLine(bst.Root.Right.Right.Left.Item);
              /
            (86) 
  */
- //------InOrder Recursive
- BSTree<int>.InOrder(bst.Root);
+
+BSTree<int>.InOrder(bst.Root);
+Console.WriteLine("-----InOrder Recursive"); 
+BSTree<int>.InOrderTraversal(bst.Root)
+    .ForEach(item => Console.Write(item + "  "));
+Console.WriteLine("-----InOrder Iterative");
